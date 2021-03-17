@@ -8,7 +8,8 @@ const port = 3000;
 app.engine('hbs', exphbs({
     extname: '.hbs'
 }));
-
+// set statics file
+app.use(express.static(path.join(__dirname,'public')))
 // app set views
 app.set('view engine','hbs')
 app.set('views',path.join(__dirname,'resources\\views'));
