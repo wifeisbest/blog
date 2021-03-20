@@ -1,5 +1,5 @@
 h1{
-    color: red;
+    color:green;
 }
 .panel{
     width: 50%;
@@ -19,4 +19,14 @@ form{
 }
 label,input{
     display: block;
+}
+table,tr,th,td{
+    margin: 20px;
+    border: 1px solid red;
+    padding: 10px;
+}
+a{
+    color: #000000;
+    display: inline-block;
+    margin: 0 10px;
 }

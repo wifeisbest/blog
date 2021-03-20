@@ -3,6 +3,7 @@ const path = require('path');
 // add handlebars
 const exphbs = require('express-handlebars');
 const app = express ();
+const methodOverride = require('method-override')
 const port = 3000;
 
 app.use(express.urlencoded({
@@ -17,10 +18,14 @@ const db = require('./config/db');
 db.connect();
 
 app.engine('hbs', exphbs({
-    extname: '.hbs'
+    extname: '.hbs',
+    helpers: {
+        sum: (a, b) => a + b,
+    }
 }));
 // set statics file
 app.use(express.static(path.join(__dirname,'public')))
+app.use(methodOverride('_method'));
 // app set views
 app.set('view engine','hbs')
 app.set('views',path.join(__dirname,'resources\\views'));
