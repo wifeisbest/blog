@@ -15,6 +15,13 @@ class NameController {
     }
         // post
     store(req, res, next){
+        Hoa.find({})
+        .then(duongs =>{
+            duongs = duongs.map(duongs => duongs.toObject());
+             res.render('names/store',{duongs})})
+        .catch(next) 
+
+
        const hoa = new Hoa(req.body);
        hoa.save();
         
