@@ -4,6 +4,12 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const app = express ();
 const port = 3000;
+
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(express.json());
+
 // nap file router 
 const route = require('./routers');
 

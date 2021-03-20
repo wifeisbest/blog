@@ -1,4 +1,4 @@
-
+const Hoa = require('../models/Name')
 
 
 class TravelController  {
