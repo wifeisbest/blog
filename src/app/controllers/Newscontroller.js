@@ -3,9 +3,7 @@
 class Newscontroller {
   
     index(req, res){
-         res.json({
-             name:"duong"
-         })
+       res.render('news')
     }
     show(req, res){
         res.send('This is my News detail')
