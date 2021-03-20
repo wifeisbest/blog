@@ -1,9 +1,11 @@
 
 
 class Newscontroller {
-    // [GET] /news.hbs
+  
     index(req, res){
-        res.render('news')
+         res.json({
+             name:"duong"
+         })
     }
     show(req, res){
         res.send('This is my News detail')

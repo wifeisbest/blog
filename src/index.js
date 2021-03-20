@@ -7,6 +7,9 @@ const port = 3000;
 // nap file router 
 const route = require('./routers');
 
+const db = require('./config/db');
+db.connect();
+
 app.engine('hbs', exphbs({
     extname: '.hbs'
 }));

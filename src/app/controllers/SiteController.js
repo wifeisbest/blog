@@ -1,11 +1,16 @@
-
+const Hoa = require('../models/Name')
 
 class Sitecontroller {
-    // [GET] /news.hbs
-    home(req, res){
-        res.render('home')
+    index(req, res){
+        Hoa.find({}, function(err,duongs){
+            if(!err){
+                 res.json(duongs);
+            }else{
+                res.status(400).json({error:'loi'})
+            }
+        })
     }
-    search(req, res){
+    search(req,res){
         res.render('search')
     }
 }
