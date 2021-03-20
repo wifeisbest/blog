@@ -2,6 +2,7 @@ const Hoa = require('../models/Name')
 
 class Sitecontroller {
     index(req, res, next){
+      
         Hoa.find({})
         .then(duongs =>{
             duongs = duongs.map(duongs => duongs.toObject());
