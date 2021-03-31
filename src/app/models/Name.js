@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
+const slug = require('mongoose-slug-generator');
+mongoose.plugin(slug);
 const Schema = mongoose.Schema;
 
 const Most = new Schema({
-    name: { type: String, default: 'myFamily' },
-    age: { type: Number, min: 18,  },
-    color: { type: String, match: /[a-z]/ }
-    
+    name: { type: String },
+    age: { type: Number },
+    color: { type: String },
+    slug: { type : String, slug: 'name', unique: true}
+  },{
+    timestamps : true,
   });
   
 module.exports = mongoose.model('Duong', Most);
