@@ -71,7 +71,7 @@
                 <div class="title m-b-md">
                     Dương Nguyễn
                 </div>
-                <h5>Make by with love <3 </h5>
+                <h5>Make by with love</h5>
                 
             </div>
         </div>
