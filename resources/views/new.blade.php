@@ -69,7 +69,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Fall in love
+                    Fall in love with you.
                 </div>
                <a href="/">Home page</a>
             </div>
