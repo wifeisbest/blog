@@ -72,7 +72,7 @@
                     Fall in love
                 </div>
                 
-                <a href="/love">Love</a>
+               
             </div>
         </div>
     </body>
