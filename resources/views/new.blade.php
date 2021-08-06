@@ -71,8 +71,7 @@
                 <div class="title m-b-md">
                     Fall in love
                 </div>
-                
-               
+               <a href="/">Home page</a>
             </div>
         </div>
     </body>
